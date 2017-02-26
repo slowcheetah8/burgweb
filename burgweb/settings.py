@@ -25,7 +25,7 @@ SECRET_KEY = 'zlt==x^q-4b99po=ual!ht!zx%urjwpx$#jq1_7yb)a1d1l(3f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','192.168.88.189']
+ALLOWED_HOSTS = ['localhost','192.168.88.189','myburghweb.com','198.211.123.238']
 
 
 # Application definition
@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'burgweb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'burgweb',
+        'USER': 'renier',
+        'PASSWORD': 'ok ok ok ',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -121,3 +125,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
