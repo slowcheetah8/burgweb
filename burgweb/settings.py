@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['localhost','192.168.88.189','myburghweb.com','198.211.123.238'
 # Application definition
 
 INSTALLED_APPS = [
+	'dj',
 	'bootstrap3',
 	'dashing',
 	'portal',

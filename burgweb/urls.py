@@ -20,5 +20,6 @@ from dashing.utils import router
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'', include('portal.urls')),
+	url(r'^dj/', include('dj.urls')),
 	url(r'^dashboard/', include(router.urls)),
 ]
