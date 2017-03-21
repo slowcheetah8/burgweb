@@ -16,12 +16,16 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from dashing.utils import router
+from oscar.app import application
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('portal.urls')),
     url(r'^dj/', include('dj.urls')),
-    url(r'^dashboard/', include(router.urls)),
+    url(r'^dash/', include(router.urls)),
+    url(r'^cal/', include('schedule.urls')),
+    url(r'^rep/', include('reptrack.urls')),
+    url(r'^clients/', include(application.urls))
 
 
 ]
