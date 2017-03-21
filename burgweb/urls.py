@@ -17,16 +17,19 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from dashing.utils import router
 from oscar.app import application
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'', include('portal.urls')),
+    #url(r'', include('portal.urls')),
     url(r'^dj/', include('dj.urls')),
     url(r'^dash/', include(router.urls)),
     url(r'^cal/', include('schedule.urls')),
     url(r'^rep/', include('reptrack.urls')),
-    url(r'^clients/', include(application.urls))
+    url(r'^clients/', include(application.urls)),
+    url(r'^', include('cms.urls')),
 
 
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
