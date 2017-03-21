@@ -20,6 +20,7 @@ from oscar.app import application
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^admin/login/?next=/admin/', application.urls),
     url(r'', include('portal.urls')),
     url(r'^dj/', include('dj.urls')),
     url(r'^dash/', include(router.urls)),
