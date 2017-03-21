@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^dj/', include('dj.urls')),
     url(r'^dashboard/', include(router.urls)),
 
+
 ]
 
