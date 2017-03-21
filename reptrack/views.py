@@ -1,5 +1,4 @@
 from django.shortcuts import render
 
-
 def index(request):
-    return render(request, 'portal/home.html')
+    return render(request, 'reptrack/home.html')
