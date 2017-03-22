@@ -199,3 +199,11 @@ LANGUAGES = [
     ('en-us', 'English'),
 ]
 
+CMS_PLACEHOLDER_CONF = {
+    'element_background_image': {
+        'plugins': ['CssBackgroundPlugin'],
+        'limits': {
+            'global': 1,
+        },
+    },
+}
