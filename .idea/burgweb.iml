@@ -12,7 +12,11 @@
     </facet>
   </component>
   <component name="NewModuleRootManager">
-    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/static" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/reptrack/static" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/portal/static" isTestSource="false" />
+    </content>
     <orderEntry type="jdk" jdkName="Python 3.5.2+ virtualenv at ~/envs/repenv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
@@ -20,7 +24,7 @@
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/dj/templates" />
+        <option value="$MODULE_DIR$/templates" />
       </list>
     </option>
   </component>
