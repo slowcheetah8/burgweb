@@ -22,12 +22,8 @@ from django.conf import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-<<<<<<< HEAD
     url(r'^admin/login/?next=/admin/', application.urls),
-    url(r'', include('portal.urls')),
-=======
     #url(r'', include('portal.urls')),
->>>>>>> 8c006dd44a669043e48f060dfb68b2f9fe3ed4ba
     url(r'^dj/', include('dj.urls')),
     url(r'^dash/', include(router.urls)),
     url(r'^cal/', include('schedule.urls')),

@@ -177,7 +177,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
@@ -194,10 +194,8 @@ HAYSTACK_CONNECTIONS = {
         'ENGINE': 'haystack.backends.simple_backend.SimpleEngine',
     },
 }
-<<<<<<< HEAD
-=======
 
 LANGUAGES = [
     ('en-us', 'English'),
 ]
->>>>>>> 8c006dd44a669043e48f060dfb68b2f9fe3ed4ba
+
